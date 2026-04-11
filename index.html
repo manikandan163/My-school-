@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sri Saraswathy Vikas Vidyalaya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <img src="/images /b.jpg" class="logo">
+    <h1>Sri Saraswathy Vikas Vidyalaya</h1>
+    <p class="tagline">✨ Let Your Light Shine ✨</p>
+    <!-- EXTRA SCROLL CONTENT -->
+
+<div class="section">
+    <h2>About Our School</h2>
+    <p>
+        Sri Saraswathy Vikas Vidyalaya Higher Secondary School provides quality education
+        from Pre-KG to 12th standard with discipline and excellence.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Our Facilities</h2>
+    <p>
+        Smart classrooms, experienced teachers, safe campus and activity-based learning.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Our Mission</h2>
+    <p>
+        To build students with strong knowledge, values and confidence for future success.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Admissions Open</h2>
+    <p>
+        Admissions are open for Pre-KG to 12th standard. Contact us for more details.
+    </p>
+</div>
+</header>
+<div class="photo-section">
+
+<h2>0ur School</h2>
+
+<img src="/images /new.jpg">
+
+
+</div>
+
+<div class="buttons">
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="course.html">Course</a>
+    <a href="infrastructure.html">Infrastructure</a>
+    
+    
+    
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>School Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="section">
+    <h2>School Profile</h2>
+
+    <p>
+        <b>Sri Saraswathy Vikas Vidyalaya Matric Hr. Sec. School</b> is functioning under 
+        Subbiah and Veerayee Memorial Educational Trust since June 2015.
+    </p>
+
+    <p><b>📍 Address:</b> Thondi Road, Kalayarkoil - 630551, Sivagangai Dist, Tamil Nadu</p>
+
+    <p><b>🏫 Govt. Recognition No:</b> K.Dis.No.9424/A3/2021 (08.02.2022)</p>
+
+    <p><b>📧 Email:</b> ssvvmskkl@gmail.com</p>
+
+    <p><b>👨‍💼 Correspondents:</b> K. Sekar, L. Jeevanantham</p>
+
+    <p><b>🎓 Principal:</b> K. Veerapandi M.Sc., M.Ed.</p>
+
+    <p><b>📘 Curriculum:</b><br>
+        1st to 5th Std – CBSE syllabus (Private publication)<br>
+        6th Std and above – Matriculation syllabus
+    </p>
+
+    <p><b>🏫 Classes:</b> KG to XII</p>
+
+    <p><b>🚌 School Transport:</b> 08 Vans covering 20 km around Kalayarkoil</p>
+    <!-- ACHIEVEMENT COUNTER -->
+
+<div class="section">
+    <h2>🏆 Our Achievements</h2>
+
+    <div class="counter-container">
+
+        <div class="counter-box red">
+            <h1 class="counter" data-target="100">0</h1>
+            <p>🏆 Achievements</p>
+        </div>
+
+        <div class="counter-box black">
+            <h1 class="counter" data-target="45">0</h1>
+            <p>👨‍🏫 Teachers</p>
+        </div>
+
+        <div class="counter-box red">
+            <h1 class="counter" data-target="10">0</h1>
+            <p>📅 Years Experience</p>
+        </div>
+
+    </div>
+</div>
+</div>
+
+    <a href="index.html" class="back-btn">⬅ Back to Home</a>
+</div>
+<script>
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+    counter.innerText = "0";
+
+    const updateCounter = () => {
+        const target = +counter.getAttribute('data-target');
+        const current = +counter.innerText;
+
+        const increment = target / 100;
+
+        if(current < target){
+            counter.innerText = Math.ceil(current + increment);
+            setTimeout(updateCounter, 30);
+        } else {
+            counter.innerText = target;
+        }
+    };
+
+    updateCounter();
+});
+</script>
+
+</body>
+</html>
